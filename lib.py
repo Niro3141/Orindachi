@@ -1,5 +1,10 @@
 class Appearance:
-    def __init__(self, ):
+    def __init__(self, left_eye=DEFAULT_LEFT_EYE, right_eye=DEFAULT_RIGHT_EYE, hair=DEFAULT_HAIR, body=DEFUALT_BODY, legs=DEFAULT_LEGS):
+        self.left_eye = left_eye
+        self.right_eye = right_eye
+        self.hair = hair
+        self.body = body
+        self.legs = legs
 
 
 class Personality:
@@ -10,10 +15,10 @@ class Personality:
         self.skill = skill
 
 class Character:
-    def __init__(self, name, personality, gender, appearance):
+    def __init__(self, name, gender, personality, appearance):
         self.name = name
-        self.personality = personality
         self.gender = gender
+        self.personality = personality
         self.appearance = appearance
 
 
